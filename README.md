@@ -30,9 +30,9 @@ It creates a sample server database and allows you to query using NLP queries. I
     ```sh
     python3 create_cmdb.py
     ```
-    This will create a sample sqlite db - cmdb.db
+    This will create a sample sqlite db - *cmdb.db*
 
-    It creates 3 tables - servers, applications, newtwork_interfaces - with primary and foreign key relationships
+    It creates 3 tables - *servers, applications, newtwork_interfaces* - with primary and foreign key relationships
 
     Some sample db data output:
 
@@ -70,11 +70,11 @@ Applications opens a form and allows user to run queries
 
 Some sample queries are:
 
-  "How many Windows servers do we have?",
-  "List all Ubuntu servers with their RAM and disk space.",
-  "What applications are installed on the server with IP 192.168.1.10?",
-  "Show me all servers in the Production environment.",
-  "Which server has the most CPU cores?"
+  - "How many Windows servers do we have?",
+  - "List all Ubuntu servers with their RAM and disk space.",
+  - "What applications are installed on the server with IP 192.168.1.10",
+  - "Show me all servers in the Production environment.",
+  - "Which server has the most CPU cores?"
 
 ## References:
 
