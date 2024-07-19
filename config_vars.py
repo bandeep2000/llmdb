@@ -1,3 +1,6 @@
+
+db_file = "cmdb.db"
+
 # Sample queries
 sample_queries = [
     "How many Windows servers do we have?",
