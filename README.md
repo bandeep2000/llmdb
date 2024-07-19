@@ -82,7 +82,7 @@ You can optionally run with docker by building from Docker file also
 
 ```sh
 docker build -t llmdb-assistant .
-docker run -p 8501:8501  -e OPENAI_API_KEY='replace with key' llmdb-assistant
+docker run -p 8501:8501  -e OPENAI_API_KEY=<replace with your key> llmdb-assistant
 
 ```
 
