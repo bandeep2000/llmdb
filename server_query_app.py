@@ -18,8 +18,11 @@ if not os.path.isfile(db_file):
     raise FileNotFoundError("Database file not found")
 db = SQLDatabase.from_uri(f"sqlite:///{db_file}")
 
+#openai_model = "gpt-4o-mini"
+openai_model = "gpt-3.5-turbo"
 # create open ai llm
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+#llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model=openai_model, temperature=0)
 
 # initilize sql agent to run queries
 agent = create_sql_agent(llm, db=db, agent_type="openai-tools", verbose=True,agent_executor_kwargs = {"return_intermediate_steps": True})

@@ -76,6 +76,16 @@ Some sample queries are:
   - "Show me all servers in the Production environment.",
   - "Which server has the most CPU cores?"
 
+### Running from docker
+
+You can optionally run with docker by building from Docker file also
+
+```sh
+docker build -t llmdb-assistant .
+docker run -p 8501:8501  -e OPENAI_API_KEY='replace with key' llmdb-assistant
+
+```
+
 ## References:
 
 https://python.langchain.com/v0.1/docs/use_cases/sql/agents/
