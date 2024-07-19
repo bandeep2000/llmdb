@@ -78,7 +78,7 @@ Some sample queries are:
 
 ### Running from docker
 
-You can optionally run with docker by building from Docker file also
+You can optionally run with docker locally by building from Dockerfile also 
 
 ```sh
 docker build -t llmdb-assistant .
